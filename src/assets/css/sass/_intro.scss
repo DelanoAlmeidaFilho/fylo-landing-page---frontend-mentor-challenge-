@@ -1,0 +1,47 @@
+/* === intro ===*/
+
+.intro {
+    width: 100%;
+    padding: 3rem 1rem 0;
+    background: var(--bg-intro-and-signup) url("../../../../src/assets/images/bg-curvy-mobile.svg") bottom no-repeat;
+    background-size: 100% 270px;
+
+    &__container {
+        max-width: 1120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+
+    &__data {
+        max-width: 742px;
+        text-align: center;
+    }
+
+    &__title {
+        font-family: var(--title-font-family);
+        font-weight: var(--bold);
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+
+    &__description {
+        margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+        background-image: url("../../../../src/assets/images/bg-curvy-desktop.svg");
+        padding-top: 5rem;
+
+        &__title {
+            font-size: 2.5rem;
+        }
+
+        &__description {
+            font-size: 1.5rem;
+        }
+    }
+}

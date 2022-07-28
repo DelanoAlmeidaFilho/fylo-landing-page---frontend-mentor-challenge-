@@ -1,0 +1,57 @@
+/* === about ===*/
+.about {
+    width: 100%;
+    padding: 7rem 1rem 0;
+
+    &__container {
+        display: grid;
+        gap: 1.5rem;
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+
+    &__img {
+        justify-self: center;
+    }
+
+    &__title {
+        font-family: var(--title-font-family);
+        font-weight: var(--bold);
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+    }
+
+    &__link {
+        color: var(--about-link);
+        font-size: 0.8rem;
+        padding-bottom: 3px;
+        border-bottom: 1px solid var(--about-link);
+
+        img {
+            vertical-align: middle;
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 10rem;
+
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            column-gap: 5rem;
+        }
+
+        &__title {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}

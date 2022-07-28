@@ -1,0 +1,12 @@
+.button {
+    display: inline-block;
+    cursor: pointer;
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    color: var(--white);
+    font-weight: var(--bold);
+    text-transform: capitalize;
+    text-align: center;
+    padding: 1.2rem 2rem;
+    min-width: 270px;
+    border-radius: 3rem;
+}

@@ -1,0 +1,56 @@
+/*========== footer ==========*/
+
+.footer {
+    background: var(--bg-footer);
+    width: 100%;
+    padding: 15rem 1rem 3rem;
+
+    &__container {
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+
+    &__logo {
+        margin-bottom: 3rem;
+    }
+
+    &__data {
+        display: grid;
+        grid-template-columns: 4fr 3fr 1fr 1fr 2fr;
+        gap: 2rem;
+    }
+
+    &__location {
+        display: grid;
+        grid-template-columns: 5% 95%;
+        gap: 1rem;
+    }
+
+    &__links p,
+    &__contact p {
+        margin-bottom: 1.5rem;
+    }
+
+    &__contact p {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__social {
+        text-align: center;
+
+        i {
+            font-size: 30px;
+        }
+
+        i + i {
+            margin-left: 1rem;
+        }
+    }
+
+    @media (max-width: 840px) {
+        &__data {
+            grid-template-columns: 1fr;
+        }
+    }
+}

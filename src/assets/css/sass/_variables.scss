@@ -1,0 +1,39 @@
+/* === variables === */
+
+:root {
+    --header-height: 4rem;
+
+    @media (min-width: 768px) {
+        --header-height: 5.5rem;
+    }
+
+    /* === colores === */
+
+    // Primary
+
+    --bg-intro-and-signup: hsl(217, 28%, 15%);
+    --bg-main: hsl(218, 28%, 13%);
+    --bg-footer: hsl(216, 53%, 9%);
+    --bg-testimonials: hsl(219, 30%, 18%);
+
+    // Accent
+
+    --gradient-start: hsl(176, 68%, 64%);
+    --gradient-end: hsl(198, 60%, 50%);
+    --color-error: hsl(0, 100%, 63%);
+    --about-link: hsl(176, 68%, 64%);
+
+    // Neutral
+
+    --white: hsl(0, 0%, 100%);
+
+    /* === font ===  */
+
+    --body-font-family: "Open Sans", sans-serif;
+    --title-font-family: "Raleway", sans-serif;
+
+    // Weights
+
+    --regular: 400;
+    --bold: 700;
+}
